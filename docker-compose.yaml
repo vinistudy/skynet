@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  shiyanlou:
+    image: skynet:1.7
+    ports:
+      - 8090:8090
+    volumes:
+      - ./server:/www/shiyanlou
+    command: /skynet/skynet /www/shiyanlou/etc/config.lua
